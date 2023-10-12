@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StartUp3</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="navbarStyle.css">
+    <link rel="stylesheet" href="heroSectionStyle.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin&family=Fira+Sans&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet"> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <p class="logo-text">Startup 3</p>
+        
+          <ul class="menu-items-container">
+            <li class="menu-items">Overview</li>
+            <li class="menu-items">Price</li>
+            <li class="menu-items">Blog</li>
+            <li class="menu-items">Feedback</li>
+            <li><div class="def-pink-button menu-item-button">Purchase</div></li>
+          </ul>
+          <p class="menu-icon" onclick={menuClick()}>menu</p>
+          <p class="menu-icon-close" onclick={menuClick()}>close</p>
+        </nav>
+        <div class="hero-container">
+            <div class="info-container">
+                <p class="info-text-heading">Generate Awesome Web Pages</p>
+                <p class="info-text">The most important part of the Startup is the simple form a set of 25 usable pages you can use as is or you can add new blocks</p>
+                <span class="def-pink-button learn-button">
+                    Learn more
+                </span>
+            </div>
+            <div class="signup-container">
+                <p class="signup-heading">Sign Up Now</p>
+                <form class="form-container">
+                    <input class="input-email-pass" type="text" placeholder="Your email"/>
+                    <input class="input-email-pass"="text" placeholder="Your password"/>
+                    <div class="terms-container">
+                        <input class="terms-check" type="checkbox"/>
+                        <p class="terms-text">I agree to the Terms of Service.</p>
+                    </div>
+                    <div class="def-buttons signin-button">
+                        <p>Sign In</p>
+                    </div>
+                    <div class="divider-container">
+                        <hr class="hr-line"/>
+                        <p class="or">or</p>
+                        <hr class="hr-line"/>
+                    </div>
+                    <div class="def-buttons twitter-button" >
+                        <p>Login via Twitter</p>
+                    </div>
+                    <div class="signin-text-container">
+                        <p class="signin-text">Do you have an Account?</p>
+                        <a href="#" class="signin-text-link">Sign In</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+    </div>
+
+  </body>
+</html>

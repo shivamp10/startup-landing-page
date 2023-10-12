@@ -1,0 +1,218 @@
+.hero-container{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+.info-container{
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.info-text-heading{
+    font-size: 2.8rem;
+    font-weight: 600;
+    overflow-wrap: break-word;
+    width: 80%;
+    margin-bottom: 2rem;
+    animation: textup 1s ease-out;
+}
+.info-text{
+    overflow-wrap: break-word;
+    width: 60%;
+    font-size: 1.10rem;
+    margin-bottom: 3rem;
+    line-height: 1.70rem;
+    color: var(--color-text);
+    animation: textopactiy 2s ease-out;
+}
+.learn-button{
+    padding: 0.75rem 2rem;
+     animation: textopactiy 2s ease-out;
+   
+}
+.signup-container{
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    animation: signupmove 0.7s ease-out;
+}
+.signup-heading{
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #320747;
+    margin-bottom: 2rem;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+.input-email-pass{
+    margin-bottom: 1.5rem;
+    width: 100%;
+    padding: 0.85rem 1.5rem;
+    outline: none;
+    border:1px solid #d3d3d3;
+    border-radius: 2.5rem;
+    font-size: 1.10rem;
+}
+.input-email-pass::placeholder{
+    color: var(--color-gray);
+}
+.terms-container{
+    display: flex;
+    color: var(--color-gray);
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.terms-check{
+    width: 18px;
+    height: 26px;
+}
+.terms-text{
+   margin-left: 0.5rem;
+}
+.signin-button{
+    background-color: var(--color-sign-up);
+}
+.divider-container{
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.hr-line{
+    width: 100%;
+}
+.or{
+    margin: 0 20px;
+    color: var(--color-gray);
+}
+.def-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 2.5rem;
+    padding: 0.85rem 1.5rem;
+    color: var(--color-white);
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+.twitter-button{
+    background-color: var(--color-log-in);
+   
+}
+.signin-text-container{
+    display: flex;
+}
+.signin-text{
+    color: var(--color-gray);
+    margin-right: 0.5rem;
+}
+.signin-text-link{
+    font-weight: 600;
+    color: var(--color-green);
+}
+
+.twitter-button:hover,.signin-button:hover,.learn-button:hover{
+    transform: scale(1.05);
+}
+
+.twitter-button:active,.signin-button:active,.learn-button:active{
+    transform: scale(0.80);
+}
+/* ----------------------------------- */
+@keyframes signupmove {
+    from{
+        transform: translateX(50rem);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes textup {
+    from{
+        transform: translateY(20rem);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes textopactiy {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/* ----------------------------------- */
+@media only screen and (max-width : 1024px){
+    .hero-container{
+        grid-template-columns: 40% 60%
+    }
+    .info-text-heading{
+        width: 90%;
+    }
+    .info-text{
+        width: 90%;
+    }
+    .form-container{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width : 768px){
+    .hero-container{
+        grid-template-columns: 35% 65%
+    }
+    .info-text-heading{
+        width: 90%;
+        font-size: 2.3rem;
+    }
+    .info-text{
+        width: 90%;
+    }
+    .form-container{
+        width: 85%;
+       }
+}
+
+@media only screen and (max-width : 576px){
+   .hero-container{
+    grid-template-columns: auto;
+    grid-template-rows: max-content max-content;
+    row-gap: 2rem;
+    justify-items: center;
+   }
+   .info-text-heading{
+    width: 100%;
+   }
+   .info-text{
+    width: 100%;
+   }
+
+   .signup-container{
+    width: 100%;
+    padding: 1.5rem 0;
+   }
+   .form-container{
+    width: 90%;
+   }
+   .input-email-pass{
+    padding: 1rem 0.5rem;
+   }
+
+}
+

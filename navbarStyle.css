@@ -1,0 +1,107 @@
+@import "index.css";
+.container{
+    margin: 4rem auto;
+    display: flex;
+    width: clamp(10rem,70vw,60rem);
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text{
+    color: var(--color-white);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.menu-items-container{
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-icon{
+    display: none;
+}
+
+.menu-icon-close{
+    display: none;
+}
+
+.menu-items{
+    color: var(--color-white);
+    font-size: 1.10rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.def-pink-button{
+    background-color: var(--color-button);
+    color: var(--color-white);
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+.menu-item-button{
+    padding: 0.50rem 1rem;
+    font-weight: 600;
+}
+
+.menu-item-button:hover{
+    transform: scale(1.05);
+}
+
+.menu-items:hover{
+    color: var(--color-gray);
+}
+
+.menu-item-button:active{
+    transform: scale(0.80);
+}
+
+
+/* ----------------------------------- */
+@media only screen and (max-width : 1024px){
+    .container{
+        width: 80%;
+    }
+    .menu-items-container{
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width : 768px){
+    .container{
+        width: 90%;
+    }
+    .menu-items-container{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width : 576px){
+    .container{
+        width: 90%;
+        
+    }
+    .menu-icon{
+        display: block;
+    }
+    
+    .menu-items-container{
+        display: none;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
